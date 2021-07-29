@@ -1,6 +1,6 @@
 # drf-advanced
 
-Initial setup
+Commands run
 ```sh
 docker-compose build
 
@@ -15,5 +15,7 @@ docker-compose run app sh -c "python manage.py makemigrations core"
 docker-compose run app sh -c "python manage.py test && flake8"
 
 docker-compose up
+
+docker-compose run --rm app sh -c "python manage.py startapp user"
 ```
 
